@@ -2,6 +2,6 @@
 	"@metadata": {
 		"authors": ["Simon Stier"]
 	},
-	"template-desc": "Template for mediawiki extensions",
-	"template-name": "Template"
+	"reveal-slide-show-desc": "Transforms wiki pages into slideshows",
+	"reveal-slide-show-name": "RevealSlideShow"
 }

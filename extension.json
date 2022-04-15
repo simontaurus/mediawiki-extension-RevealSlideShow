@@ -1,40 +1,40 @@
 {
     "manifest_version":2,
-    "name":"Template",
+    "name":"RevealSlideShow",
     "version":"0.0.1",
     "author":[
         "[https://github.com/simontaurus Simon Stier]"
     ],
-    "url":"https://github.com/simontaurus/mediawiki-extensions-Template",
-    "descriptionmsg":"template-desc",
-    "namemsg":"template-name",
+    "url":"https://github.com/simontaurus/mediawiki-extensions-RevealSlideShow",
+    "descriptionmsg":"reveal-slide-show-desc",
+    "namemsg":"reveal-slide-show-name",
     "license-name":"AGPL-3.0-or-later",
     "type":"editor",
     "requires":{
         "MediaWiki":">= 1.31"
     },
     "MessagesDirs":{
-        "Template":[
+        "RevealSlideShow":[
             "i18n"
         ]
     },
     "ResourceModules":{
-        "ext.Template":{
-            "localBasePath":"modules/ext.Template",
-            "remoteExtPath":"Template/modules/ext.Template",
+        "ext.RevealSlideShow":{
+            "localBasePath":"modules/ext.RevealSlideShow",
+            "remoteExtPath":"RevealSlideShow/modules/ext.RevealSlideShow",
             "styles":[
-                "Template.css"
+                "RevealSlideShow.css"
             ],
             "scripts":[
-                "Template.js"
+                "RevealSlideShow.js"
             ],
             "position":"bottom"
         }
     },
     "AutoloadClasses":{
-        "Template":"includes/Template.php"
+        "RevealSlideShow":"includes/RevealSlideShow.php"
     },
     "Hooks":{
-        "BeforePageDisplay":"Template::onBeforePageDisplay"
+        "BeforePageDisplay":"RevealSlideShow::onBeforePageDisplay"
     }
 }

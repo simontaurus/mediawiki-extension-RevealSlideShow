@@ -1,18 +1,13 @@
-# mediawiki-extensions-Template
+# mediawiki-extensions-RevealSlideShow
 
-## initialize this template
+## Installation
 
-1. replace all names within files
-```
-find . -not -path '*/.*' -type f -exec sed -i 's/template/extension-name/g' {} +
-find . -not -path '*/.*' -type f -exec sed -i 's/Template/ExtensionName/g' {} +
-```
+clone this repo to your extension dir and include 
 
+wfLoadExtension( 'RevealSlideShow' );
 
-1. replace all file and dir names (run twice)
-```
-find .  -name '*Template*' -not -path '*/.*' -exec bash -c ' mv $0 ${0/\Template/ExtensionName}' {} \;
-find .  -name '*Template*' -not -path '*/.*' -exec bash -c ' mv $0 ${0/\Template/ExtensionName}' {} \;
-```
+in LocalSetting.php
 
+or yust copy modules/ext.RevealSlideShow/RevealSlideShow.js
 
+to MediaWiki:Common.js
